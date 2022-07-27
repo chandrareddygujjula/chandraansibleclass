@@ -7,6 +7,9 @@
     copy:
        src: mytestfile
        dest: /home/ubuntu/mystaticfile
+  - name: install webserver
+    state: present
+         
   
   
       
