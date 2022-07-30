@@ -1,0 +1,5 @@
+---
+- hosts: application server
+  become: yes
+  roles:
+   - {role: mytomrole, when: ansible_Os_family=="Debian"}
