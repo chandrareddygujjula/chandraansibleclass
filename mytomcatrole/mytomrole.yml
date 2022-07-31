@@ -2,4 +2,4 @@
 - name: applicationservers
   become: yes
   roles:
-   - {role: mytomrole, when: ansible_Os_family=="Debian"}
+   - {role: mytomcatrole, when: ansible_Os_family=="Debian"}
