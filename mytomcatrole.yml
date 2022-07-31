@@ -1,5 +1,5 @@
 ---
-- name: appplicationservers
+- name: 172.31.20.138  
   become: yes
   roles:
    - {role: mytomcatserverrole, when: ansible_Os_family=="Debian"}
