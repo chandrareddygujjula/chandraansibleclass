@@ -1,5 +1,0 @@
----
-- name: applicationservers
-  become: yes
-  roles:
-   - {role: mytomcatrole, when: ansible_Os_family=="Debian"}

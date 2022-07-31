@@ -1,0 +1,15 @@
+---
+- name: add tomcat admin user
+  templates:
+      src: templates/tomuser.j2
+      dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: change context xml file
+  templates:
+      src: template/tomcontext.j2
+      dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: host cntext xml file
+  templates:
+      src: templates/tomhost.j2
+      dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml

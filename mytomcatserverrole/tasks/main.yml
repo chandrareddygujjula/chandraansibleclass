@@ -1,2 +1,9 @@
 ---
 # tasks file for mytomcatserverrole
+- include_tasks: myadduser.yml
+- include_tasks: installjava.yml
+- include_tasks: download.yml
+- include_tasks: permisions.yml
+- include_tasks: configadminuser.yml
+- include_tasks: tomcatservice.yml
+- include_tasks: starttomcat.yml
